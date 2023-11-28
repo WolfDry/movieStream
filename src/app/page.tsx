@@ -1,3 +1,4 @@
+import { Card } from '@/components/card'
 import data from '../../public/data/movie.json'
 import Image from 'next/image'
 
@@ -9,10 +10,7 @@ export default function Home() {
       {
         movies.map((movie)=>{
           return(
-            <>
-              <p key={movie.ID}>{movie.TitreVF}</p>
-              <Image src={`/affiches/${movie.ID}.JPG`} alt='image' width={100} height={100}/>
-            </>
+            <Card image={movie.ID} title={movie.TitreVF} annee={movie.Annee} categ={movie.Genre}/>
           )
         })
       }

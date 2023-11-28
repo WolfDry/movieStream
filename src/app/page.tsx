@@ -1,4 +1,5 @@
 import data from '../../public/data/movie.json'
+import Image from 'next/image'
 
 export default function Home() {
   const movies = data.Filmotech_Films.Film
@@ -8,7 +9,10 @@ export default function Home() {
       {
         movies.map((movie)=>{
           return(
-            <p>{movie.TitreVF}</p>
+            <>
+              <p key={movie.ID}>{movie.TitreVF}</p>
+              <Image src={`/affiches/${movie.ID}.JPG`} alt='image' width={100} height={100}/>
+            </>
           )
         })
       }

@@ -6,14 +6,18 @@ export default function Home() {
   const movies = data.Filmotech_Films.Film
   return (
     <main>
-      <h1>MovieStream</h1>
-      {
-        movies.map((movie)=>{
-          return(
-            <Card image={movie.ID} title={movie.TitreVF} annee={movie.Annee} categ={movie.Genre}/>
-          )
-        })
-      }
+      <header>
+        <h1 className='title'>MovieStream</h1>
+      </header>
+      <section className="content">
+        {
+          movies.map((movie)=>{
+            return(
+              <Card image={movie.ID} title={movie.TitreVF} annee={movie.Annee} categ={movie.Genre}/>
+            )
+          })
+        }
+      </section>
     </main>
   )
 }

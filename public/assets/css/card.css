@@ -1,0 +1,28 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 650px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0, 0.5);    
+    background-image:linear-gradient(to top left, rgba(71, 71, 71, 0.5), rgba(71,71,71,0.5));
+    backdrop-filter: blur(10px); 
+}
+
+.card .card_desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.card .card_desc #categ{
+    text-align: end;
+    text-align-last: center;
+}
+
+.card .card_title{
+    text-align: center;
+}

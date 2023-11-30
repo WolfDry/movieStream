@@ -15,6 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="assets/css/card.css" />
+      </head>
       <body>{children}</body>
     </html>
   )

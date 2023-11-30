@@ -11,11 +11,13 @@ export function Card(props: {
     const annee = props.annee
     const categ = props.categ
   return (
-    <div>
+    <div className='card'>
         <Image src={'/affiches/'+image+'.JPG'} alt='image' width={300} height={450}/>
-        <h1>{title}</h1>
-        <p>{annee}</p>
-        <p>{categ}</p>
+        <h1 className='card_title'>{ title }</h1>
+        <div className='card_desc'>
+          <p>{ annee }</p>
+          <p id='categ'>{ categ }</p>
+        </div>
     </div>
   )
 }

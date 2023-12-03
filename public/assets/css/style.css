@@ -23,3 +23,11 @@ header{
     gap: 30px;
     width: 95vw;
 }
+
+.infos{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0, 0.5);   
+    background-image:linear-gradient(to top left, rgba(71, 71, 71, 0.5), rgba(124, 124, 124, 0.5));
+}

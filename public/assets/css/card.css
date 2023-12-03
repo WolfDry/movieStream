@@ -5,10 +5,11 @@
     align-items: center;
     width: 400px;
     height: 650px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 15px;
     background-color: rgb(0, 0, 0, 0.5);    
-    background-image:linear-gradient(to top left, rgba(71, 71, 71, 0.5), rgba(71,71,71,0.5));
-    backdrop-filter: blur(10px); 
+    background-image:linear-gradient(to top left, rgba(71, 71, 71, 0.5), rgba(124, 124, 124, 0.5));
+    backdrop-filter: blur(10px);
 }
 
 .card .card_desc{

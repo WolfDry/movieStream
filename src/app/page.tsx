@@ -1,6 +1,7 @@
 'use client'
 
 import { Card } from '@/components/card'
+import { Button } from '@/components/button';
 import data from '../../public/data/movie.json'
 import { useState } from 'react';
 
@@ -33,9 +34,7 @@ export default function Home() {
         <h1 className='title'>MovieStream</h1>
       </header>
       <section>
-        <button onClick={handleDisplay}>
-          Quelques informations en plus !
-        </button>
+        <Button title='Quelques informations en plus !' onClick={handleDisplay}/>
         {
           display && 
           <div className='infos'>

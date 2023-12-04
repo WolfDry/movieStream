@@ -27,3 +27,7 @@
 .card .card_title{
     text-align: center;
 }
+
+.card img{
+    border-radius: 10px;
+}

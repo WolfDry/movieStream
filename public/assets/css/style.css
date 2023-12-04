@@ -31,3 +31,18 @@ header{
     background-color: rgb(0, 0, 0, 0.5);   
     background-image:linear-gradient(to top left, rgba(71, 71, 71, 0.5), rgba(124, 124, 124, 0.5));
 }
+
+.button{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button:hover{
+    background-color: grey;
+}

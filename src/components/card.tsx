@@ -2,16 +2,10 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 export function Card(props: {
-    title: string,
-     image: string,
-     annee: string,
-     categ: string
+    movie: object
 }) {
     const [display, setDisplay] = useState('')
-    const image = props.image
-    const title = props.title
-    const annee = props.annee
-    const categ = props.categ
+    const movie = props.movie
 
     const handleDisplay = () => {
       if(display)
@@ -19,15 +13,21 @@ export function Card(props: {
       if(!display)
         setDisplay('active')
     }
-    console.log(display)
   return (
     <div className={`card ${display}`} onClick={handleDisplay}>
-        <Image src={'/affiches/'+image+'.JPG'} alt='image' width={300} height={450}/>
-        <h1 className='card_title'>{ title }</h1>
+      <div className="card_info">
+        <Image src={'/affiches/'+movie.ID+'.JPG'} alt='image' width={300} height={450}/>
+        <h1 className='card_title'>{ movie.titreVF }</h1>
         <div className='card_desc'>
-          <p>{ annee }</p>
-          <p id='categ'>{ categ }</p>
+          <p>{ movie.Annee }</p>
+          <p id='categ'>{ movie.Genre }</p>
         </div>
+      </div>
+      {display && 
+      <div className="card_details">
+        <p>{movie.Synopsis}</p>
+      </div>
+      }
     </div>
   )
 }

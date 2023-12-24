@@ -75,7 +75,7 @@ export default function Home() {
         {
           movies.map((movie)=>{
             return(
-              <Card key={movie.ID} image={movie.ID} title={movie.TitreVF} annee={movie.Annee} categ={movie.Genre}/>
+              <Card key={movie.ID} movie={movie}/>
             )
           })
         }

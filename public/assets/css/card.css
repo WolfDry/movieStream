@@ -10,23 +10,24 @@
     background-color: rgb(0, 0, 0, 0.5);    
     background-image:linear-gradient(to top left, rgba(71, 71, 71, 0.5), rgba(124, 124, 124, 0.5));
     backdrop-filter: blur(10px);
-    transition: all 1s;
+    transition: width 1s;
+}
+
+.card .card_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .card.active{
-    width: 95vw;
-}
-
-.card .card_desc{
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 90%;
-}
-
-.card .card_desc #categ{
-    text-align: end;
-    text-align-last: center;
+    position: absolute;
+    align-items: flex-start;
+    width: 95vw;
+    padding: 0 0 0 1rem;
+    z-index: 9999;
 }
 
 .card .card_title{
@@ -35,4 +36,27 @@
 
 .card img{
     border-radius: 10px;
+}
+
+.card .card_desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card .card_desc p{
+    text-align: center;
+}
+
+.card .card_desc #categ{
+    text-align: end;
+    text-align-last: center;
+}
+
+.card .card_details{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
 }

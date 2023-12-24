@@ -30,6 +30,7 @@ header{
     border-radius: 15px;
     background-color: rgb(0, 0, 0, 0.5);   
     background-image:linear-gradient(to top left, rgba(71, 71, 71, 0.5), rgba(124, 124, 124, 0.5));
+    transition: all 0.5s;
 }
 
 .button{

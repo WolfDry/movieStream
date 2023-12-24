@@ -42,7 +42,7 @@ export default function Home() {
       </header>
       <section>
         <Button title='Quelques informations en plus !' onClick={handleDisplay}/>
-        <div  ref={parent}>
+        <div ref={parent}>
           { display && 
             <div className='infos'>
               <p>Suite à quelques demandes sur les films que je possède voici un site répertoriant tous les films que j'ai et que je peux vous transmettre.</p>

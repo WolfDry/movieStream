@@ -12,16 +12,16 @@ export default function Home() {
 
   const movies = data.Filmotech_Films.Film
   movies.sort((a, b) => {
-      const champA = a.TitreVF.toUpperCase(); // Convertir en majuscules pour ignorer la casse
-      const champB = b.TitreVF.toUpperCase(); // Convertir en majuscules pour ignorer la casse
+      const champA = a.TitreVF.toString().toUpperCase(); // Convertir en majuscules pour ignorer la casse
+      const champB = b.TitreVF.toString().toUpperCase(); // Convertir en majuscules pour ignorer la casse
 
       if (champA < champB) {
-          return -1; // Retourne un nombre négatif si a précède b
+          return -1;
       }
       if (champA > champB) {
-          return 1; // Retourne un nombre positif si b précède a
+          return 1;
       }
-      return 0; // Retourne 0 si les deux sont égaux
+      return 0;
   });
 
   const handleDisplay = () => {
@@ -67,7 +67,7 @@ export default function Home() {
         {
           movies.map((movie)=>{
             return(
-              <Card key={movie.ID} image={movie.ID} title={movie.TitreVF} annee={movie.Annee} categ={movie.Genre}/>
+              <Card key={movie.ID} image={movie.ID} title={movie.TitreVF.toString()} annee={movie.Annee.toString()} categ={movie.Genre}/>
             )
           })
         }

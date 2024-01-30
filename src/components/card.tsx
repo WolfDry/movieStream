@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 export function Card(props: {
     title: string,
-     image: string,
+     image: number,
      annee: string,
      categ: string
 }) {

@@ -1,7 +1,7 @@
 export interface Movie {
-    ID: string;
+    ID: number;
     TitreVF: string;
-    Annee: string;
+    Annee: number;
     Genre: string;
     Synopsis: string;
 }

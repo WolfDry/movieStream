@@ -21,15 +21,6 @@
     height: 100%;
 }
 
-.card.active{
-    flex-direction: row;
-    position: absolute;
-    align-items: flex-start;
-    width: 95vw;
-    padding: 0 0 0 1rem;
-    z-index: 9999;
-}
-
 .card .card_title{
     text-align: center;
 }
@@ -52,11 +43,4 @@
 .card .card_desc #categ{
     text-align: end;
     text-align-last: center;
-}
-
-.card .card_details{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100%;
 }

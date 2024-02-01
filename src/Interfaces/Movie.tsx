@@ -1,8 +1,37 @@
-export interface Movie {
-    ID: number;
+export type Movie = {
+    ID: string;
+    DateHeureMAJ: string;
     TitreVF: string;
-    Annee: number;
-    Genre: string;
-    Synopsis: string;
+    TitreVO: string;
     Slug: string;
+    Genre: string;
+    Pays: string;
+    Annee: string;
+    Duree: string;
+    Synopsis: string;
+    Acteurs: string;
+    Realisateurs: string;
+    Commentaires: string;
+    Support: string;
+    Edition: string;
+    Langues: string;
+    SousTitres: string;
+    Audio: string;
+    Bonus: string;
+    EntreeType: string;
+    EntreeSource: string;
+    EntreePrix: string;
+    EntreeDate: string;
+    Sortie: string;
+    SortieType: string;
+    SortieDestinataire: string;
+    SortiePrix: string;
+    SortieDate: string;
+    PretEnCours: string;
+    FilmVu: string;
+    Reference: string;
+    BAType: string;
+    BAChemin: string;
+    MediaType: string;
+    MediaChemin: string;
 }

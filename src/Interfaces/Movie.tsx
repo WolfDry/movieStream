@@ -4,4 +4,5 @@ export interface Movie {
     Annee: number;
     Genre: string;
     Synopsis: string;
+    Slug: string;
 }

@@ -9,7 +9,7 @@ interface IMovie {
 export function Card({movie}: IMovie) {
 
   return (
-    <Link href={"/movie"}>
+    <Link href={`/movie/${movie.Slug}`}>
       <div className={"card"}>
         <div className="card_info">
             <Image src={'/affiches/'+movie.ID+'.JPG'} alt='image' width={300} height={450}/>

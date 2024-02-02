@@ -6,6 +6,8 @@ import data from '../../public/data/movie.json'
 import { useState, useRef, useEffect } from 'react';
 import autoAnimate from '@formkit/auto-animate';
 
+import '../../public/assets/css/style.css'
+import '../../public/assets/css/card.css'
 
 export default function Home() {
 

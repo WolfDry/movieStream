@@ -1,4 +1,4 @@
-import { Movie } from "@/Interfaces/Movie"
+import Image from "next/image"
 import "../../../../public/assets/css/style.css"
 import data from '../../../../public/data/movie.json'
 
@@ -14,8 +14,13 @@ export default function Page({params}: props) {
       <header>
         <h1 className='title'>MovieStream</h1>
       </header>
-      <section>
-        <h1>{movie.TitreVF}</h1>
+      <section className="movie">
+        <div className="basic-infos">
+          <Image src={'/affiches/'+movie.ID+'.JPG'} alt='image' width={300} height={450}/>
+        </div>
+        <div className="main-infos">
+          
+        </div>
       </section>
     </main>
   )

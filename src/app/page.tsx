@@ -5,6 +5,7 @@ import { Button } from '@/components/button';
 import data from '../../public/data/movie.json'
 import { useState, useRef, useEffect } from 'react';
 import autoAnimate from '@formkit/auto-animate';
+import Header from '@/components/header'
 
 import '../../public/assets/css/style.css'
 import '../../public/assets/css/card.css'
@@ -39,9 +40,7 @@ export default function Home() {
 
   return (
     <main>
-      <header>
-        <h1 className='title'>MovieStream</h1>
-      </header>
+      <Header />
       <section>
         <Button title='Quelques informations en plus !' onClick={handleDisplay}/>
         <div ref={parent}>

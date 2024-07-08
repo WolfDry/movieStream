@@ -20,19 +20,6 @@ export default function Page({ params }: props) {
           <div>
             <Image src={'/affiches/' + movie.ID + '.JPG'} alt='image' width={525} height={787.5} />
           </div>
-          <div>
-            <p>
-              Genre : {movie.Genre}
-            </p>
-          </div>
-          <div>
-            <p>
-              Réalisateur : {movie.Realisateurs}
-            </p>
-            <p>
-              Acteurs : {movie.Acteurs}
-            </p>
-          </div>
         </div>
         <div className="main-infos">
           <div>
@@ -53,6 +40,19 @@ export default function Page({ params }: props) {
             </p>
             <p>
               Sous-titre : {movie.SousTitres}
+            </p>
+          </div>
+          <div>
+            <p>
+              Genre : {movie.Genre}
+            </p>
+          </div>
+          <div>
+            <p>
+              Réalisateur : {movie.Realisateurs}
+            </p>
+            <p>
+              Acteurs : {movie.Acteurs}
             </p>
           </div>
         </div>

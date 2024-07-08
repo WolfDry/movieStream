@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.1",
-    "next": "14.0.3",
+    "next": "^14.2.4",
     "react": "^18",
     "react-dom": "^18",
     "react-xml-parser": "^1.1.8"

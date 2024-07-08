@@ -1,3 +1,23 @@
 .movie{
     display: flex;
+    margin: 2rem;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0, 0.5);    
+    background-image:linear-gradient(to top left, rgba(71, 71, 71, 0.5), rgba(124, 124, 124, 0.5));
+    backdrop-filter: blur(10px);
+}
+
+.movie .basic-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.movie .main-infos{
+    padding: 2rem;
+    max-width: 1100px;
 }

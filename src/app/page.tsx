@@ -52,16 +52,16 @@ export default function Home() {
                 <li>Le site est en constante évolution et donc recevra des mises à jour afin de l'améliorer.</li>
                 <li>La liste de films sera mise à jour à chaque fois que j'ajouterais un nouveau film dans mon disque dur.</li>
                 <li>Vous pouvez à tout moment me demander un film qui n'ai pas dans la liste.</li>
-                <li>Pour le moment, je peux vous transmettre les films via google drive, swissTransfer (mail) ou en physique.</li>
-                <li>Suivant mes disponibilités, vous pouvez recevoir un film au maximum 2/3 jours après la demande.</li>
-                <li>Au minimum, un film sera "livré" en 2h.</li>
+                <li>Pour le moment, je peux vous transmettre les films via google drive, swissTransfer (mail) et/ou en physique.</li>
+                <li>Suivant mes disponibilités, vous recevrez le film demandé entre 2h et 2/3 jours après la demande.</li>
                 <li>Les films que je télécharge sont, sauf exception, en minimum 1080p(environ 4/5Go par film) et maximum 4K(entre 5 et 80Go le film)</li>
-                <li>Si les films sont trop gros, pour diverses raisons, ils seront retélécharger pour mieux convenir aux besoins.</li>
+                <li>Les films que je télécharge sont, sauf exception, en français et anglais avec les sous-titre en français/anglais (d'autre sous-titre peuvent être disponible)</li>
+                <li>Si les films sont trop gros/ne fonctionne pas, pour diverses raisons, ils peuvent être retélécharger pour mieux convenir aux besoins.</li>
                 <li>Je suis preneur de tous les retours que vous pouvez me faire (sur le site, sur les films, ect).</li>
               </ul>
               <p>Fonctionnalités à venir : </p>
               <ul>
-                <li>Affichage des détails des films.</li>
+                <li>Affichage des détails des films. ☑️</li>
                 <li>Meilleurs rangements des films (une série de films comme mission impossible, par exemple, sera rangée dans l'ordre des films et pas dans l'ordre alphabétique).</li>
                 <li>Ajouter une pagination à la page pour n'afficher qu'une dizaine de films par pages.</li>
                 <li>Ajout d'un filtre pour affiner la recherche d'un film.</li>
